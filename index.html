@@ -27,13 +27,14 @@
                     <a href="#" class="nav-link" data-page="about">من نحن</a>
                     <a href="#" class="nav-link" data-page="contact">تواصل معنا</a>
                     <a href="#" class="nav-link" onclick="showProfile(); return false;">الملف الشخصي</a>
+                    <a href="admin.html" class="nav-link admin-link" title="لوحة التحكم" style="color: #f59e0b; font-weight: 600;">⚙️ لوحة التحكم</a>
                 </div>
 
                 <!-- Auth Buttons -->
-               <div class="nav-actions" id="navActions">
-    <button class="btn btn-outline" onclick="showPage('auth')">تسجيل الدخول</button>
-    <button class="btn btn-primary" onclick="showPage('auth')">ابدئي الآن</button>
-</div>
+                <div class="nav-actions" id="navActions">
+                    <button class="btn btn-outline" onclick="showPage('auth')">تسجيل الدخول</button>
+                    <button class="btn btn-primary" onclick="showPage('auth')">ابدئي الآن</button>
+                </div>
 
                 <!-- Mobile Menu Button -->
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -47,6 +48,7 @@
                 <a href="#" class="mobile-nav-link" data-page="about">من نحن</a>
                 <a href="#" class="mobile-nav-link" data-page="contact">تواصل معنا</a>
                 <a href="#" class="mobile-nav-link" onclick="showProfile(); return false;">الملف الشخصي</a>
+                <a href="admin.html" class="mobile-nav-link admin-link" style="color: #f59e0b; font-weight: 600;">⚙️ لوحة التحكم</a>
                 <div class="mobile-nav-actions">
                     <button class="btn btn-outline btn-block" onclick="showPage('auth')">تسجيل الدخول</button>
                     <button class="btn btn-primary btn-block" onclick="showPage('auth')">ابدئي الآن</button>
@@ -370,110 +372,110 @@
         </div>
 
         <!-- Contact Page -->
-     <div id="contactPage" class="page">
-    <section class="contact-hero">
-        <div class="container">
-            <div class="contact-hero-content">
-                <h1>تواصل معنا</h1>
-                <p>نحن هنا لمساعدتك في رحلتك الريادية. تواصلي معنا في أي وقت</p>
-            </div>
-        </div>
-    </section>
+        <div id="contactPage" class="page">
+            <section class="contact-hero">
+                <div class="container">
+                    <div class="contact-hero-content">
+                        <h1>تواصل معنا</h1>
+                        <p>نحن هنا لمساعدتك في رحلتك الريادية. تواصلي معنا في أي وقت</p>
+                    </div>
+                </div>
+            </section>
 
-    <section class="contact-content">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-form">
-                    <h2>أرسلي رسالة</h2>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label>الاسم الكامل</label>
-                            <input id="contactName" type="text" placeholder="أدخلي اسمك الكامل" required>
+            <section class="contact-content">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form">
+                            <h2>أرسلي رسالة</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label>الاسم الكامل</label>
+                                    <input type="text" placeholder="أدخلي اسمك الكامل" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>البريد الإلكتروني</label>
+                                    <input type="email" placeholder="example@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>الموضوع</label>
+                                    <input type="text" placeholder="موضوع الرسالة" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>الرسالة</label>
+                                    <textarea placeholder="اكتبي رسالتك هنا..." rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label>البريد الإلكتروني</label>
-                            <input id="contactEmail" type="email" placeholder="example@email.com" required>
+                        <div class="contact-info">
+                            <h2>معلومات التواصل</h2>
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <div class="contact-label">البريد الإلكتروني</div>
+                                    <div class="contact-value">info@tamkeen.eg</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <div class="contact-label">الهاتف</div>
+                                    <div class="contact-value">+20 2 1234 5678</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <div class="contact-label">العنوان</div>
+                                    <div class="contact-value">القاهرة، مصر</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>الموضوع</label>
-                            <input id="contactSubject" type="text" placeholder="موضوع الرسالة" required>
-                        </div>
-                        <div class="form-group">
-                            <label>الرسالة</label>
-                            <textarea id="contactMessage" placeholder="اكتبي رسالتك هنا..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
-                    </form>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <h2>معلومات التواصل</h2>
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <div class="contact-label">البريد الإلكتروني</div>
-                            <div class="contact-value">info@tamkeen.eg</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <div class="contact-label">الهاتف</div>
-                            <div class="contact-value">+20 2 1234 5678</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <div class="contact-label">العنوان</div>
-                            <div class="contact-value">القاهرة، مصر</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-</div>
 
-<!-- Help Page -->
-<div id="helpPage" class="page">
-    <section class="help-hero">
-        <div class="container">
-            <div class="help-hero-content">
-                <h1>مركز المساعدة</h1>
-                <p>نحن هنا لمساعدتك في كل خطوة من رحلتك الريادية</p>
-            </div>
-        </div>
-    </section>
+        <!-- Help Page -->
+        <div id="helpPage" class="page">
+            <section class="help-hero">
+                <div class="container">
+                    <div class="help-hero-content">
+                        <h1>مركز المساعدة</h1>
+                        <p>نحن هنا لمساعدتك في كل خطوة من رحلتك الريادية</p>
+                    </div>
+                </div>
+            </section>
 
-    <section class="help-content">
-        <div class="container">
-            <div class="help-grid">
-                <div class="help-section">
-                    <h2>البدء في رحلتك</h2>
-                    <div class="help-item">
-                        <h3>كيف أنشئ حساب جديد؟</h3>
-                        <p>اضغطي على "ابدئي الآن" في الصفحة الرئيسية واتبعي الخطوات البسيطة لإنشاء حسابك.</p>
-                    </div>
-                    <div class="help-item">
-                        <h3>ما هي الدورات المتاحة؟</h3>
-                        <p>نوفر أكثر من 500 دورة تدريبية في مجالات مختلفة مثل التسويق، الإدارة المالية، وريادة الأعمال.</p>
+            <section class="help-content">
+                <div class="container">
+                    <div class="help-grid">
+                        <div class="help-section">
+                            <h2>البدء في رحلتك</h2>
+                            <div class="help-item">
+                                <h3>كيف أنشئ حساب جديد؟</h3>
+                                <p>اضغطي على "ابدئي الآن" في الصفحة الرئيسية واتبعي الخطوات البسيطة لإنشاء حسابك.</p>
+                            </div>
+                            <div class="help-item">
+                                <h3>ما هي الدورات المتاحة؟</h3>
+                                <p>نوفر أكثر من 500 دورة تدريبية في مجالات مختلفة مثل التسويق، الإدارة المالية، وريادة الأعمال.</p>
+                            </div>
+                        </div>
+                        <div class="help-section">
+                            <h2>الدعم الفني</h2>
+                            <div class="help-item">
+                                <h3>كيف أتصل بالدعم؟</h3>
+                                <p>يمكنك التواصل معنا عبر البريد الإلكتروني info@tamkeen.eg أو الهاتف +20 2 1234 5678</p>
+                            </div>
+                            <div class="help-item">
+                                <h3>مشاكل في تسجيل الدخول</h3>
+                                <p>تأكدي من صحة البريد الإلكتروني وكلمة المرور. إذا نسيت كلمة المرور، استخدمي رابط "نسيت كلمة المرور".</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="help-section">
-                    <h2>الدعم الفني</h2>
-                    <div class="help-item">
-                        <h3>كيف أتصل بالدعم؟</h3>
-                        <p>يمكنك التواصل معنا عبر البريد الإلكتروني info@tamkeen.eg أو الهاتف +20 2 1234 5678</p>
-                    </div>
-                    <div class="help-item">
-                        <h3>مشاكل في تسجيل الدخول</h3>
-                        <p>تأكدي من صحة البريد الإلكتروني وكلمة المرور. إذا نسيت كلمة المرور، استخدمي رابط "نسيت كلمة المرور".</p>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-</div>
 
         <!-- Investors Page -->
         <div id="investorsPage" class="page">
@@ -1278,133 +1280,141 @@
 
         <!-- Auth Page (Login/Register) - Will be shown when clicking auth buttons -->
         <div id="authPage" class="page">
-    <div class="auth-container">
-        <div class="auth-content">
-            <div class="auth-sidebar">
-                <h2>انضمي إلى<br><span class="gradient-text">مجتمع رائدات الأعمال</span></h2>
-                <p>أكثر من ١٢٠٠ رائدة أعمال مصرية بدأن رحلتهن معنا</p>
-                <ul class="auth-features">
-                    <li>✓ وصول لأكثر من ٥٠٠ دورة تدريبية متخصصة</li>
-                    <li>✓ فرص تمويل من مستثمرين موثوقين</li>
-                    <li>✓ إرشاد من خبراء في مجال ريادة الأعمال</li>
-                    <li>✓ أدوات متقدمة لمتابعة تقدم مشروعك</li>
-                </ul>
-            </div>
-
-            <div class="auth-form-container">
-                <div class="auth-tabs">
-                    <button class="auth-tab" onclick="switchAuthTab('register')">إنشاء حساب جديد</button>
-                    <button class="auth-tab active" onclick="switchAuthTab('login')">تسجيل الدخول</button>
-                </div>
-
-                <h3 class="auth-title" id="authTitle">أهلاً بعودتك!</h3>
-
-                <!-- Login Form -->
-                <form id="loginForm" class="auth-form">
-                    <div class="form-group">
-                        <label>البريد الإلكتروني</label>
-                        <input id="loginEmail" type="email" placeholder="example@email.com" required>
+            <div class="auth-container">
+                <div class="auth-content">
+                    <div class="auth-sidebar">
+                        <h2>انضمي إلى<br><span class="gradient-text">مجتمع رائدات الأعمال</span></h2>
+                        <p>أكثر من ١٢٠٠ رائدة أعمال مصرية بدأن رحلتهن معنا</p>
+                        <ul class="auth-features">
+                            <li>✓ وصول لأكثر من ٥٠٠ دورة تدريبية متخصصة</li>
+                            <li>✓ فرص تمويل من مستثمرين موثوقين</li>
+                            <li>✓ إرشاد من خبراء في مجال ريادة الأعمال</li>
+                            <li>✓ أدوات متقدمة لمتابعة تقدم مشروعك</li>
+                        </ul>
                     </div>
 
-                    <div class="form-group">
-                        <label>كلمة المرور</label>
-                        <input id="loginPassword" type="password" placeholder="••••••••" required>
-                    </div>
+                    <div class="auth-form-container">
+                        <div class="auth-tabs">
+                            <button class="auth-tab" onclick="switchAuthTab('register')">إنشاء حساب جديد</button>
+                            <button class="auth-tab active" onclick="switchAuthTab('login')">تسجيل الدخول</button>
+                        </div>
 
-                    <div class="form-row">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="rememberMe">
-                            <span>تذكرني</span>
-                        </label>
-                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
-                    </div>
+                        <h3 class="auth-title" id="authTitle">أهلاً بعودتك!</h3>
 
-                    <button type="submit" class="btn btn-primary btn-block btn-lg">
-                        تسجيل الدخول
-                    </button>
-                </form>
-
-                <!-- Register Form -->
-                <form id="registerForm" class="auth-form" style="display: none;">
-                    <div class="account-types">
-                        <label class="account-type">
-                            <input type="radio" name="accountType" value="entrepreneur" checked>
-                            <div class="account-type-card">
-                                <div class="account-type-icon">👤</div>
-                                <div class="account-type-title">رائدة أعمال</div>
-                                <div class="account-type-desc">لديَّ مشروع أو فكرة</div>
+                        <!-- Login Form -->
+                        <form id="loginForm" class="auth-form">
+                            <div class="form-group">
+                                <label>البريد الإلكتروني</label>
+                                <input type="email" placeholder="example@email.com" required>
                             </div>
-                        </label>
 
-                        <label class="account-type">
-                            <input type="radio" name="accountType" value="investor">
-                            <div class="account-type-card">
-                                <div class="account-type-icon">🏢</div>
-                                <div class="account-type-title">مستثمر / مرشد</div>
-                                <div class="account-type-desc">أريد دعم المشاريع</div>
+                            <div class="form-group">
+                                <label>كلمة المرور</label>
+                                <input type="password" placeholder="••••••••" required>
                             </div>
-                        </label>
+
+                            <div class="form-row">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="rememberMe">
+                                    <span>تذكرني</span>
+                                </label>
+                                <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">
+                                تسجيل الدخول
+                            </button>
+                        </form>
+
+                        <!-- Register Form -->
+                        <form id="registerForm" class="auth-form" style="display: none;">
+                            <div class="account-types">
+                                <label class="account-type">
+                                    <input type="radio" name="accountType" value="entrepreneur" checked>
+                                    <div class="account-type-card">
+                                        <div class="account-type-icon">👤</div>
+                                        <div class="account-type-title">رائدة أعمال</div>
+                                        <div class="account-type-desc">لديَّ مشروع أو فكرة</div>
+                                    </div>
+                                </label>
+
+                                <label class="account-type">
+                                    <input type="radio" name="accountType" value="investor">
+                                    <div class="account-type-card">
+                                        <div class="account-type-icon">🏢</div>
+                                        <div class="account-type-title">مستثمر / مرشد</div>
+                                        <div class="account-type-desc">أريد دعم المشاريع</div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label>الاسم الكامل</label>
+                                <input type="text" placeholder="أدخلي اسمك الكامل" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>البريد الإلكتروني</label>
+                                <input type="email" placeholder="example@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>كلمة المرور</label>
+                                <input type="password" placeholder="••••••••" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>رقم الهاتف</label>
+                                <input type="tel" placeholder="+20 1XX XXX XXXX" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>رابط فيسبوك (اختياري)</label>
+                                <input type="url" placeholder="https://www.facebook.com/username" name="facebook">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">
+                                إنشاء الحساب
+                            </button>
+
+                            <p class="auth-terms">
+                                بإنشاء حساب، أنتِ توافقين على 
+                                <a href="#" onclick="showPage('terms'); return false;">الشروط والأحكام</a> و 
+                                <a href="#">سياسة الخصوصية</a>
+                            </p>
+                        </form>
+
+                        <div class="auth-divider">أو</div>
+
+                        <div class="social-auth">
+                        <button type="button" id="googleSignInButton" class="btn btn-outline btn-block">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=" width="18" alt="Google">
+                                متابعة باستخدام Google
+                            </button>
+                        </div>
+
+                        <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e5e7eb; text-align: center;">
+                            <p style="font-size: 12px; color: #6b7280; margin-bottom: 10px;">هل أنتِ مديرة نظام؟</p>
+                            <a href="admin.html" class="btn btn-outline btn-block" style="background: #f5f3ff; color: #6366f1; border-color: #c4b5fd; font-weight: 600;">
+                                ⚙️ الدخول إلى لوحة التحكم الإدارية
+                            </a>
+                        </div>
+
+                        <div class="auth-back">
+                            <a href="#" onclick="showPage('landing')">← العودة للصفحة الرئيسية</a>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label>الاسم الكامل</label>
-                        <input id="registerName" type="text" placeholder="أدخلي اسمك الكامل" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>البريد الإلكتروني</label>
-                        <input id="registerEmail" type="email" placeholder="example@email.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>كلمة المرور</label>
-                        <input id="registerPassword" type="password" placeholder="••••••••" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>رقم الهاتف</label>
-                        <input id="registerPhone" type="tel" placeholder="+20 1XX XXX XXXX" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>رابط فيسبوك (اختياري)</label>
-                        <input id="registerFacebook" type="url" placeholder="https://www.facebook.com/username" name="facebook">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-block btn-lg">
-                        إنشاء الحساب
-                    </button>
-
-                    <p class="auth-terms">
-                        بإنشاء حساب، أنتِ توافقين على
-                        <a href="#" onclick="showPage('terms'); return false;">الشروط والأحكام</a> و
-                        <a href="#">سياسة الخصوصية</a>
-                    </p>
-                </form>
-
-                <div class="auth-divider">أو</div>
-
-                <div class="social-auth">
-                    <button type="button" id="googleSignInButton" class="btn btn-outline btn-block">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=" width="18" alt="Google">
-                        متابعة باستخدام Google
-                    </button>
-                </div>
-
-                <div class="auth-back">
-                    <a href="#" onclick="showPage('landing')">← العودة للصفحة الرئيسية</a>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
         <!-- Dashboard Page (shown after login) -->
         <div id="dashboardPage" class="page">
             <div class="dashboard-container">
                 <div class="container">
                     <div class="dashboard-header">
                         <div>
-                            <h1 id="dashboardUserName">مرحباً 👋</h1>
+                            <h1>مرحباً، سارة! 👋</h1>
                             <p>نتمنى لك يوماً مثمراً من التعلم والتطوير</p>
                         </div>
                         <button class="btn btn-primary" onclick="showPage('courses')">
@@ -1521,40 +1531,7 @@
                             <button class="btn btn-outline" onclick="showPage('courses')">عرض الدورات</button>
                         </div>
                     </div>
-<!-- Admin Dashboard -->
-<div id="adminPage" class="page">
-    <div class="dashboard-container">
-        <div class="container">
 
-            <h1>لوحة تحكم الأدمن</h1>
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <h3>المستخدمين</h3>
-                    <span id="adminUsersCount">0</span>
-                </div>
-
-                <div class="stat-card">
-                    <h3>المشاريع</h3>
-                    <span id="adminProjectsCount">0</span>
-                </div>
-
-                <div class="stat-card">
-                    <h3>الرسائل</h3>
-                    <span id="adminContactsCount">0</span>
-                </div>
-
-                <div class="stat-card">
-                    <h3>المستثمرين</h3>
-                    <span id="adminInvestorsCount">0</span>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
                     <div class="profile-grid">
                         <div class="profile-card">
                             <div class="profile-card-header">
